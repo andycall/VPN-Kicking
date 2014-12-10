@@ -5,8 +5,8 @@ var http = require("http"),
     path = require("path"),
     stdout = process.stdout,
     stdin = process.stdin,
-    PORT = 8030;
-
+    PORT = 8030,
+    password = require("./password").password;
 
 // 创建HTTP 服务器
 function createServer(){
@@ -17,7 +17,8 @@ function createServer(){
 			var params = url.parse(req.url, true).query;
 
 
-			if(params['password'] != "") return; // 设置密码 ^_^
+			console.log(password);
+			if(params['password'] != password) return; // 设置密码 ^_^
 
 
 			res.writeHead(200, {
@@ -49,7 +50,6 @@ function killPPP(name){
 		}
 	});
 }
-
 
 createServer();
 
