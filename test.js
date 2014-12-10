@@ -5,7 +5,7 @@ var http = require("http"),
     path = require("path"),
     stdout = process.stdout,
     stdin = process.stdin,
-    PORT = 3000;
+    PORT = 8030;
 
 
 // 创建HTTP 服务器
@@ -38,8 +38,8 @@ function createServer(){
 		});
 		
 
-	}).listen(8030, "0.0.0.0");
-	console.log("Server Running at 0.0.0.0:8030");
+	}).listen(PORT, "0.0.0.0");
+	console.log("Server Running at 0.0.0.0:" + PORT);
 }
 
 function killPPP(name){
