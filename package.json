@@ -1,0 +1,7 @@
+{
+  "name": "Vector",
+  "version": "0.1.0",
+  "devDependencies": {
+    "redis": "^0.12.1"
+  }
+}
