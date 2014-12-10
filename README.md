@@ -25,4 +25,4 @@ visit localhost://8030?password=xxx could show the `ifconfig` info from the serv
 访问 localhost://8030?password=xxx&info=ppp2 可以断开服务器上`ppp2` 的
 连接
 
-visit localhost://8030?password=xxx&info=ppp2 can take off the connection of `pop2`
+visit localhost://8030?password=xxx&info=ppp2 can take off the connection of `ppp2`
