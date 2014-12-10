@@ -1,4 +1,3 @@
-PPTP 踢人工具
 PPTP Ticking tools
 =====================
 
